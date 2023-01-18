@@ -1,17 +1,12 @@
 ﻿/*
-Задача 29: Напишите программу, которая задаёт массив из N элементов и выводит их на экран.
-5 -> [1, 2, 5, 7, 19]
-3 -> [6, 1, 33]
+Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+6, 1, 33 -> [6, 1, 33]
 */
-int ReadAndWrite(string question)
-{
-    Console.WriteLine(question);
-    return Convert.ToInt32(Console.ReadLine());
-}
-int N = ReadAndWrite("Введите длину массива:");
-int[] RandomArray = new int[N];
+
+int[] RandomArray = new int[8];
 for(int i =0; i < RandomArray.Length; i++)
 {
     RandomArray[i] = new Random().Next(1, 10);
-     Console.Write(RandomArray[i] + " ");
 }
+Console.WriteLine($"Массив {String.Join(", ", RandomArray)}");
