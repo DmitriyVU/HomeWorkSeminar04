@@ -1,9 +1,9 @@
 ﻿/* Задача 27 Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 452 -> 11;  82 -> 10;  9012 -> 12   */
 
-int ReadAndWrite(string line)
+int ReadAndWrite(string question)
 {
-    Console.WriteLine(line);
+    Console.WriteLine(question);
     return Convert.ToInt32(Console.ReadLine());
 }
 int NumberLen(int a)
