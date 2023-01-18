@@ -3,20 +3,20 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16 */
 
-void Method(int a, int b)
+void Procedura(int a, int b)
 {
     int result = 1;
     for(int i = 1; i <= b; i++)
     {
         result = result * a;
     }
-    Console.WriteLine(a + " в степени " + b + " = " + result);
+    Console.WriteLine($" {a}  в степени {b}  = {result}");
 }
-int Read(string line)
+int ReadAndWrite(string question)
 {
-    Console.WriteLine(line);
+    Console.WriteLine(question);
     return Convert.ToInt32(Console.ReadLine());
 }
-int numberA = Read("Введите число: ");
-int numberB = Read("Введите степень: ");
-Method(numberA, numberB);
+int numberA = ReadAndWrite("Введите число: ");
+int numberB = ReadAndWrite("Введите степень: ");
+Procedura(numberA, numberB);
